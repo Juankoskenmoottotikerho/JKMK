@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Juankosken Moottorikerho Ry – Moottoripyöräkerho Juankoskella. Yhteisajot ja tapahtumat vuodesta 1964." />
+  <meta property="og:title" content="Juankosken Moottorikerho Ry | JKMK" />
+  <meta property="og:description" content="Moottoripyöräkerho Juankoskella vuodesta 1964." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Juankosken Moottorikerho Ry | JKMK</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #000; color: #f5c400; line-height: 1.6; }
+    header, section, footer { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    header { text-align: center; border-bottom: 2px solid #f5c400; }
+    h1, h2 { margin-bottom: 20px; }
+    a { color: #ffd700; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .button { display: inline-block; background: #f5c400; color: #000; padding: 12px 24px; border-radius: 8px; font-weight: bold; margin-top: 20px; border: none; cursor: pointer; }
+    .card { background: #111; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+    footer { text-align: center; border-top: 2px solid #f5c400; font-size: 14px; }
+    iframe { width: 100%; height: 300px; border: 0; border-radius: 10px; }
+    input, textarea { width: 100%; padding: 10px; margin-top: 10px; border-radius: 6px; border: none; box-sizing: border-box; }
+  </style>
+</head>
+<body>
+<header>
+  <img src="logo.png" alt="JKMK logo" width="150" />
+  <h1>Juankosken Moottorikerho Ry</h1>
+  <p>Perustettu 1964 – Moottoripyöräharrastusta ja yhteisöllisyyttä Juankoskella</p>
+  <a href="#yhteystiedot" class="button">Ota yhteyttä</a>
+</header>
+
+<section>
+  <h2>Tietoa kerhosta</h2>
+  <div class="card">
+    <p>Juankosken Moottorikerho Ry (JKMK) on aktiivinen moottoripyöräkerho Pohjois-Savossa.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Sijainti</h2>
+  <div class="card">
+    <iframe src="https://www.google.com/maps?q=Juankoski,Finland&output=embed" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section id="yhteystiedot">
+  <h2>Yhteystiedot</h2>
+  <div class="card">
+    <p><strong>Sähköposti:</strong> <a href="mailto:info@jkmk.fi">info@jkmk.fi</a></p>
+    <p><strong>Facebook:</strong> <a href="https://facebook.com/">facebook.com/jkmk</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Juankosken Moottorikerho Ry – Kaikki oikeudet pidätetään</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
